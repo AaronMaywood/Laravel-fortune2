@@ -1,0 +1,513 @@
+/* =========================
+reset.css
+========================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*clearfix*/
+.clearfix:after {
+  content: ".";  /* 新しい要素を作る */
+  display: block;  /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  min-height: 1px;
+}
+* html .clearfix {
+  height: 1px;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.sp-only {
+	display: none;
+}
+@media screen and (max-width:768px){
+	.sp-only {
+		display: block;
+	}
+	.pc-only {
+		display: none;
+	}
+}
+/* =========================
+pc.css
+========================= */
+body {
+	width: 100%;
+	font-family: 'Noto Sans JP', sans-serif;
+	background: repeat url(../images/bg.jpg);
+}
+img{
+	width:100%;
+	height:auto;
+}
+#wrapper {
+	width: 90%;
+	max-width: 800px;
+	height:auto;
+	margin-right: auto;
+	margin-left: auto;
+	text-align:center;
+	margin-bottom:1px;
+}
+a:hover{
+filter:alpha(opacity=90);
+opacity:0.9;
+}
+input:hover{
+filter:alpha(opacity=80);
+opacity:0.9;
+}
+#btn:hover{
+filter:alpha(opacity=90);
+opacity:0.9;
+}
+
+/*form-uranai(占いフォーム入力部分)-------------------*/
+.uranai-form{
+	padding: 30px;
+	background: #fff7d2;
+}
+@media screen and (max-width:768px){
+	.uranai-form {
+		padding: 20px 2% 30px 2%;
+	}
+}
+.uranai-form h2 {
+	padding-bottom: 30px;
+	font-size: 24px;
+	font-weight: 500;
+}
+.uranai-form form {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	width: 550px;
+}
+@media screen and (max-width:768px){
+	.uranai-form form {
+		display: block;
+		width: 100%;
+	}
+}
+.uranai-form form > p {
+	width: 33%;
+}
+@media screen and (max-width:768px){
+	.uranai-form form > p {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+}
+.uranai-form form > input {
+	display: block;
+}
+.form-flam01{
+	width:110px;
+	padding:5px;
+}
+.form-flam02{
+	width:110px;
+	padding:5px;
+}
+
+.btn-uranau {
+	margin: 30px auto 0 auto;
+	width: 320px;
+	height: 70px;
+	font-size: 36px;
+	line-height: 1;
+	text-align:center;
+	color: #fff;
+	background: #cc1a0d;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
+	transition: 0.2s;
+}
+@media screen and (max-width:768px){
+	.btn-uranau {
+		width: 80%;
+		font-size: 24px;
+	}
+}
+.btn-uranau:hover {
+	background: #cf554c;
+}
+
+/*Youtube-------------------*/
+.vWrap{
+position: relative;
+margin-bottom: 3em;
+padding-bottom: 50%;
+padding-top: 69px;
+overflow: hidden;
+}
+
+.vWrap iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/*banner(バナー部分)-------------------*/
+.bannerIn02{
+	width:100%;
+}
+.bannerIn02 ul li{
+	margin-bottom:1.5%;
+	width:33.333%;
+	float:left;
+}
+.bnrmagin{
+	margin:0 1.5%
+}
+.bannerIn03{
+	width:100%;
+}
+.bannerIn03 ul li{
+	margin-bottom:1.5%;
+	width:33.3%;
+	float:left;
+}
+.bannerIn03 ul li img{
+	width:100%;
+float: left;
+}
+
+/*2024.12追記*/
+.bnr-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bnr-wrap li {
+  margin-bottom: 8px;
+  width: 32%;
+}
+.bnr-ag{
+	margin-bottom: 10px;
+}
+.bnr-ag p{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.bnr-ag h2{
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.party_info{
+	font-size: 11px;
+	line-height: 1.6;
+}
+
+/*footer（フッター部分）-------------------*/
+footer{
+	clear:both;
+	text-align: center;
+	background-color:#FFFFFF;
+}
+footer p{
+	line-height:40px;
+	font-size:small;
+}
+
+/*ソーシャルボタンの調整-------------------*/
+#snsbtnArea{
+	margin-bottom:20px;
+	border-top:#FFFFFF dotted 1px;
+	border-bottom:#FFFFFF dotted 1px;
+	padding:15px 0;
+}
+#snsbtnArea-in{
+	width:460px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+.fb_iframe_widget{
+	vertical-align: top;
+}
+.fb-like{
+	margin-left:0px !important;
+	/* margin-right:30px; */
+	vertical-align: text-bottom;
+}
+iframe.twitter-share-button {
+    width: 105px !important;
+}
+.line{
+	width:90px;
+	float:right;
+}
+#___plusone_0 {
+width:75px !important;
+}
+
+/*調整-------------------*/
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt25{margin-top:25px;}
+.mt30{margin-top:30px;}
+
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px;}
+.mb25{margin-bottom:25px;}
+.mb30{margin-bottom:30px;}
+
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml25{margin-left:25px;}
+.ml30{margin-left:30px;}
+
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mr20{margin-right:20px;}
+.mr25{margin-right:25px;}
+.mr30{margin-right:30px;}
+
+.m5{margin:5px;}
+.m10{margin:10px;}
+.m15{margin:15px;}
+
+.pt5{padding-top:5px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
+.pt20{padding-top:20px;}
+.pt25{padding-top:25px;}
+
+.pb5{padding-bottom:5px;}
+.pb10{padding-bottom:10px;}
+.pb15{padding-bottom:15px;}
+.pb20{padding-bottom:20px;}
+.pb25{padding-bottom:25px;}
+
+.p5{padding:5px;}
+.p10{padding:10px;}
+.p15{padding:15px;}
+
+.fleft{float:left}
+
+/* =========================
+2025/3改修
+========================= */
+.bg-wh {
+  margin: 75px 0 50px 0;
+  padding: 50px 2% 15px 2%;
+  background: #fff;
+}
+@media screen and (max-width:768px){
+  .bg-wh {
+    margin: 30px 0;
+    padding: 30px 3% 15px;
+  }
+}
+/*文字まわり*/
+.txt-bk_rd {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background: #cc1a0d;
+  display: inline-block;
+  border-radius: 50px;
+}
+@media screen and (max-width:768px){
+	.txt-bk_rd {
+		margin-bottom: 25px;
+		line-height: 1.6;
+		width: 100%;
+		font-size: 14px;
+	}
+}
+.ttl-lg {
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+}
+@media screen and (max-width:768px){
+.ttl-lg {
+	margin-bottom: 25px;
+	font-size: 36px;
+	}
+}
+.txt-mark {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.8;
+  background: linear-gradient(transparent 70%, #fffa78 70%);
+  display: inline;
+}
+@media screen and (max-width:768px){
+	.txt-mark {
+		font-size: 18px;
+	}
+}
+/*キャラクター画像*/
+.list-img {
+  margin: 50px auto 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+}
+@media screen and (max-width:768px){
+	.list-img {
+		margin: 20px auto;
+		width: 90%;
+	}
+}
+.list-img li {
+  width: 33%;
+}
+
+/*下層*/
+.kekka {
+  padding-bottom: 50px;
+}
+.kekka .txt-bk_rd {
+  width: 160px;
+}
+.kekka h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+@media screen and (max-width:768px){
+  .kekka h2 {
+    font-size: 36px;
+  }
+}
+.kekka > img {
+  width: 60%;
+}
+.kekka h3 {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  background: #fffa78;
+}
+@media screen and (max-width:768px){
+  .kekka h3 {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+}
+.kekka h4 {
+  margin: 20px 0 10px 0;
+  padding: 5px 0 5px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  position: relative;
+}
+@media screen and (max-width:768px){
+  .kekka h4 {
+    font-size: 16px;
+  }
+}
+.kekka h4:before {
+  content: "";
+  background: #fffa78;
+  width: 8px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.kekka > p {
+  line-height: 1.7;
+  text-align: left;
+}
+.kekka > p + h3 {
+  margin-top: 25px;
+}
+.kekka .btn-uranau {
+  padding: 20px 60px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  text-decoration: none;
+}
+/*エラーメッセージ*/
+.bg-rd {
+  padding: 16px;
+  color: #fff;
+  text-align: center;
+  background: #cc1a0d;
+}
+.list-error {
+  padding-top: 10px;
+  text-align: left;
+}
+.list-error li {
+  color: #cc1a0d;
+  line-height: 1.6;
+}
