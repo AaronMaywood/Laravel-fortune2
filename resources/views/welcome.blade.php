@@ -49,59 +49,59 @@
       <h2>生年月日を入力してください</h2>
       <form method="GET" action="{{ route('kabbala') }}" class="mb10">
         <p>
-          <input type="text" name="year" class="form-flam01">
+          <input type="text" name="year" class="form-flam01" value="{{ old('year') }}"">
         年</p>
         <p>
         <select name="month" class="form-flam02">
-          <option>--</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
+          <!-- <option>--</option> -->
+          <option value="1" @if(1 === (int)old('month')) selected @endif>1</option>
+          <option value="2" @if(2 === (int)old('month')) selected @endif>2</option>
+          <option value="3" @if(3 === (int)old('month')) selected @endif>3</option>
+          <option value="4" @if(4 === (int)old('month')) selected @endif>4</option>
+          <option value="5" @if(5 === (int)old('month')) selected @endif>5</option>
+          <option value="6" @if(6 === (int)old('month')) selected @endif>6</option>
+          <option value="7" @if(7 === (int)old('month')) selected @endif>7</option>
+          <option value="8" @if(8 === (int)old('month')) selected @endif>8</option>
+          <option value="9" @if(9 === (int)old('month')) selected @endif>9</option>
+          <option value="10" @if(10 === (int)old('month')) selected @endif>10</option>
+          <option value="11" @if(11 === (int)old('month')) selected @endif>11</option>
+          <option value="12" @if(12 === (int)old('month')) selected @endif>12</option>
         </select>
         月</p>
         <p>
           <select name="day" class="form-flam02">
-            <option>--</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
+            <!-- <option>--</option> -->
+            <option value="1" @if(1 == old('day')) selected @endif>1</option>
+            <option value="2" @if(2 == old('day')) selected @endif>2</option>
+            <option value="3" @if(3 == old('day')) selected @endif>3</option>
+            <option value="4" @if(4 == old('day')) selected @endif>4</option>
+            <option value="5" @if(5 == old('day')) selected @endif>5</option>
+            <option value="6" @if(6 == old('day')) selected @endif>6</option>
+            <option value="7" @if(7 == old('day')) selected @endif>7</option>
+            <option value="8" @if(8 == old('day')) selected @endif>8</option>
+            <option value="9" @if(9 == old('day')) selected @endif>9</option>
+            <option value="10" @if(10 === (int)old('day')) selected @endif>10</option>
+            <option value="11" @if(11 === (int)old('day')) selected @endif>11</option>
+            <option value="12" @if(12 === (int)old('day')) selected @endif>12</option>
+            <option value="13" @if(13 === (int)old('day')) selected @endif>13</option>
+            <option value="14" @if(14 === (int)old('day')) selected @endif>14</option>
+            <option value="15" @if(15 === (int)old('day')) selected @endif>15</option>
+            <option value="16" @if(16 === (int)old('day')) selected @endif>16</option>
+            <option value="17" @if(17 === (int)old('day')) selected @endif>17</option>
+            <option value="18" @if(18 === (int)old('day')) selected @endif>18</option>
+            <option value="19" @if(19 === (int)old('day')) selected @endif>19</option>
+            <option value="20" @if(20 === (int)old('day')) selected @endif>20</option>
+            <option value="21" @if(21 === (int)old('day')) selected @endif>21</option>
+            <option value="22" @if(22 === (int)old('day')) selected @endif>22</option>
+            <option value="23" @if(23 === (int)old('day')) selected @endif>23</option>
+            <option value="24" @if(24 === (int)old('day')) selected @endif>24</option>
+            <option value="25" @if(25 === (int)old('day')) selected @endif>25</option>
+            <option value="26" @if(26 === (int)old('day')) selected @endif>26</option>
+            <option value="27" @if(27 === (int)old('day')) selected @endif>27</option>
+            <option value="28" @if(28 === (int)old('day')) selected @endif>28</option>
+            <option value="29" @if(29 === (int)old('day')) selected @endif>29</option>
+            <option value="30" @if(30 === (int)old('day')) selected @endif>30</option>
+            <option value="31" @if(31 === (int)old('day')) selected @endif>31</option>
           </select>
         日</p>
         <ul class="list-error">
