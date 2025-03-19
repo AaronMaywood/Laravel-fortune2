@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('fortunes', function (Blueprint $table)
+        Schema::create('career_fortunes', function (Blueprint $table)
             {
                 $table->id();               // 誕生数としても使用する
                 $table->string('name');     // キャラクター名
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('fortunes');
+        Schema::dropIfExists('career_fortunes');
     }
 };

@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Models\Fortune;
+use App\Models\CareerFortune;
 
 class FortuneSeeder extends Seeder
 {
@@ -45,14 +45,14 @@ class FortuneSeeder extends Seeder
         foreach ($fortunes as $fortune)
         {
             /*
-            DB::table('fortunes')->insert(
+            DB::table('career_fortunes')->insert(
                 [
                     'name'      => $fortune['name'],
                     'fortune'   => json_encode($fortune['fortune'], JSON_UNESCAPED_UNICODE),
                 ]
             );
             */
-            Fortune::create(
+            CareerFortune::create(
                 [
                     'name'      => $fortune['name'],
                     'fortune'   => $fortune['fortune'],
