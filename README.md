@@ -23,6 +23,9 @@ DB_USERNAME=academy-php_fortune
 DB_PASSWORD=パスワードをここへ
 ```
 
+本番URL:
+https://academy-php.sakura.ne.jp/CareerFortune
+
 # 開発の流れ
 
 ## Laravel のインストール
