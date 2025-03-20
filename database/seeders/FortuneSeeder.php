@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Models\CareerFortune;
+use App\Models\CareerJsonFortune;
 
 class FortuneSeeder extends Seeder
 {
@@ -52,7 +52,7 @@ class FortuneSeeder extends Seeder
                 ]
             );
             */
-            CareerFortune::create(
+            CareerJsonFortune::create(
                 [
                     'name'      => $fortune['name'],
                     'fortune'   => $fortune['fortune'],

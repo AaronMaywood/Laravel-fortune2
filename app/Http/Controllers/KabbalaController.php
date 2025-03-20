@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CareerFortune;
+use App\Models\CareerJsonFortune;
 use Illuminate\Http\Request;
 
 class KabbalaController extends Controller
@@ -21,7 +21,7 @@ class KabbalaController extends Controller
         ]);
 
         // 誕生数を計算する
-        $birthNumber = CareerFortune::calcBirthNumber
+        $birthNumber = CareerJsonFortune::calcBirthNumber
         (
             $request->input('year'),
             $request->input('month'),
@@ -31,7 +31,7 @@ class KabbalaController extends Controller
 $birthNumber = 1;   // TODO: 仮の値
 
         // Model読み込み
-        $fortune = CareerFortune::find($birthNumber);
+        $fortune = CareerJsonFortune::find($birthNumber);
         
         return view('result', compact('birthNumber','fortune'));
     }
